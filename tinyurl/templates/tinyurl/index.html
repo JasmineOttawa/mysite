@@ -1,0 +1,6 @@
+<form action="/tinyurl/shortenurl/" method="post">
+    <label for="shorten_url">Enter long URL: </label>
+    {% csrf_token %}
+    <input id="lURL" type="text" name="lURL">
+    <input type="submit" value="Make TinyURL!">
+</form>
